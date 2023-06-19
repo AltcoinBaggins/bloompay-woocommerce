@@ -82,7 +82,7 @@ class Bloompay_USDS_Gateway extends WC_Payment_Gateway
                 'title' => __('Service URL', 'bloompay-usds-gateway'),
                 'type' => 'text',
                 'description' => __('The URL of the USDS payment API that handles the payment', 'bloompay-usds-gateway'),
-                'default' => 'https://bloompay.bloomshares.com:48080', 'bloompay-usds-gateway'),
+                'default' => 'https://bloompay.bloomshares.com:443', 'bloompay-usds-gateway'),
                 'desc_tip' => true
             ),
 */
@@ -174,7 +174,7 @@ class Bloompay_USDS_Gateway extends WC_Payment_Gateway
     public function process_payment($order_id)
     {
         //if (!$remote_url = esc_url($this->get_option('service_url'))) {
-            $remote_url = 'https://bloompay.bloomshares.com:48080';
+            $remote_url = 'https://bloompay.bloomshares.com';
         //}
 
         $order = wc_get_order($order_id);
