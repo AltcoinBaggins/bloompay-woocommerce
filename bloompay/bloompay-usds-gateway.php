@@ -111,7 +111,7 @@ class Bloompay_USDS_Gateway extends WC_Payment_Gateway
         }
 */
         //if (!$remote_url = esc_url($this->get_option('service_url'))) {
-            $remote_url = 'https://bloompay.bloomshares.com:48080';
+            $remote_url = 'https://bloompay.bloomshares.com';
         //}
 
         $remote_options = array(
