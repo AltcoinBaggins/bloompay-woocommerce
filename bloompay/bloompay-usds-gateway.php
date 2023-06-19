@@ -5,7 +5,7 @@ Plugin URI: https://bloompay.bloomshares.com/
 Description: Payment gateway to enable payments in USDSHARES BEP-20 token for WooCommerce 
 Version: 1.0
 Author:  Bloomshares Limited
-Author URI: https://bloompay.bloomshares.com/
+Author URI: https://www.bloomshares.com/
 License: GPL2
 */
 
