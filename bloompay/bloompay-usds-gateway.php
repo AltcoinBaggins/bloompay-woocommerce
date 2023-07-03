@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Bloompay USDS Gateway
-Plugin URI: https://bloompay.co.uk/
+Plugin URI: https://merchants.bloompay.co.uk/
 Description: Payment gateway to enable payments in USDSHARES BEP-20 token for WooCommerce 
 Version: 1.0
 Author:  Bloomshares Limited
@@ -111,7 +111,7 @@ class Bloompay_USDS_Gateway extends WC_Payment_Gateway
         }
 */
         //if (!$remote_url = esc_url($this->get_option('service_url'))) {
-            $remote_url = 'https://bloompay.co.uk';
+            $remote_url = 'https://merchants.bloompay.co.uk';
         //}
 
         $remote_options = array(
@@ -174,7 +174,7 @@ class Bloompay_USDS_Gateway extends WC_Payment_Gateway
     public function process_payment($order_id)
     {
         //if (!$remote_url = esc_url($this->get_option('service_url'))) {
-            $remote_url = 'https://bloompay.co.uk';
+            $remote_url = 'https://merchants.bloompay.co.uk';
         //}
 
         $order = wc_get_order($order_id);
